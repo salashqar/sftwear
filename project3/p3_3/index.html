@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sara Alashqar">
+  <title>Project 3</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+ 
+  <script>
+
+
+    $(document).ready(function(){
+
+      //messages array 
+      var messages = [];
+
+      //loop 
+      do {
+
+          var input = prompt("Please enter a word or cancel to stop");
+          if(input !=null) messages.push(input);
+
+      }   while (input != null);
+
+        //join and sort
+          $("#msg").html(messages.sort().join(", ")); 
+
+      });
+
+  </script>
+</head>
+<body>
+
+    
+    <a href="..\home.html"><img src="..\sftwear.png" alt=""></a>  
+        <h1>IT 411</h1>
+  
+        <hr />
+        <h2 id="msg"></h2>
+
+<p id="luckyNumber"></p>
+<p id="myMessage"></p>
+
+
+<!--return to homepage-->
+<p><a href="..\home.html">Home</a></p>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sara Alashqar">
+  <title>Project 3</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+ 
+  <script>
+
+function display_msg() {
+    
+    // messages array 
+    var myMessages = [ 
+       "This Tshirt says i'm Fabolous",
+       "I’m Second",
+       "I’m Kind Of A Big Deal",
+       "I’m Not Angry This is Just My Face",
+       "Stop Reading My Shirt",
+       "May The 4th Be With You",
+       "Sorry i'm late. I didn't want to come.",
+       "My favorite plans are cancelled plans",
+       "Socially distant",
+       "Not shy. I just don't like you."
+     ]
+    
+    // user's input from the input box
+    var luckyNumber = $("input#luckyNumber").val();
+    
+    // the number used to choose from my messages array
+    var index = luckyNumber % myMessages.length;
+    
+     if (luckyNumber < 0 ) {
+    //alert("please enter a number greater than or equal to zero");
+
+    $("div#myMessage").html("please enter a number greater than or equal to zero");
+    }
+
+    // else display the message from the array
+    else if (luckyNumber >= 0 ){
+
+    $("div#myMessage").html("Your T-Shirt will say" + "<h1>" + myMessages[index] + "</h1>");
+    }
+    
+}
+
+$(document).ready(function(){
+	  // note the use of keyup to get an instant notifcation
+      $("input#luckyNumber").keyup(function() {
+        display_msg();
+	  });
+});
+
+  </script>
+</head>
+<body>
+    
+        <a href="..\home.html"><img src="..\sftwear.png" alt=""></a>
+        <h1>IT 411</h1>
+        <h2>favorite number </h2>
+        <hr />
+        <p>Please enter your favorite number and we'll give you a phrase for your t-shirt</p>
+
+<input type="text" id="luckyNumber">
+<div id="myMessage"></div>   
+
+<!--return to homepage-->
+<p><a href="..\home.html">Home</a></p>
+
+</body>
+
+
+
+</html>

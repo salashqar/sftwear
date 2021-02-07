@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sara Alashqar">
+  <title>Project 3</title>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+ 
+   <script>
+    
+    $(document).ready(function(){ 
+            
+
+           $("#p1").mouseenter(function() {
+               $("#p1").css("color", "blue");
+           });
+
+
+           $("#p1").mouseleave(function() { 
+               $("#p1").css("color", "");
+           });
+
+          $("#p2").click(function() {
+              $("#p2").css("font-weight", "bold");
+
+          }); 
+
+          $("#p2").dblclick(function() {
+            $("#p2").css("font-weight","");
+
+
+          });
+        
+        
+        });
+
+    
+  </script>
+
+
+
+
+</head>
+    
+<body>  
+  <p><a href="..\home.html">Home</a></p>
+  <a href="..\home.html"><img src="..\sftwear.png" alt=""></a>  
+  <h1>IT 411 experience</h1>
+  <hr />
+   <p id="p1">My favorite restaurant is Wu's House Japanese, it is a family business that serves sushim hibachim authentic chinese and Thai food</p>
+  <p id="p2">Wu's has amazing Shrimp Lo mein and they have the best crab rangoon!</p>
+  <!--return to homepage-->
+<p><a href="..\home.html">Home</a></p>
+</body>
+</html>
