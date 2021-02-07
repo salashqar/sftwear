@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Project 2</title>
+ 
+</head>
+
+<body>
+  <p><a href="..\home.html">Home</a></p>
+   <a href="..\home.html"><img src="..\sftwear.png" alt=""></a>  
+   
+<br>
+   <script>
+     var myMessages = [ 
+       "This Tshirt says i'm Fabolous",
+       "I’m Kind Of A Big Deal",
+       "I’m Kind Of A Big Deal",
+       "I’m Not Angry This is Just My Face",
+       "Stop Reading My Shirt",
+       "May The 4th Be With You",
+       "Sorry i'm late. I didn't want to come.",
+       "My favorite plans are cancelled plans",
+       "Socially distant",
+       "Not shy. I just don't like you."
+
+
+     ]
+     
+     var luckyNumber = Number(prompt("Please give me your lucky number"))  
+
+     if (luckyNumber < 0 ) {
+      alert("please enter a number greater than or equal to zero");
+     }
+
+     if (luckyNumber == 0 ) {
+
+      var index = luckyNumber % myMessages.length;
+
+      document.write("Zero is a hero. Good choice. Well done.");
+
+      document.write("<br>");
+      
+      document.write(myMessages[index]);
+    
+     }
+
+     else if (luckyNumber > 0 ) {
+
+     var index = luckyNumber % myMessages.length;
+    
+    document.write(myMessages[index]);
+     }
+
+     
+    
+  </script>
+  
+    
+  
+</body>
+</html>

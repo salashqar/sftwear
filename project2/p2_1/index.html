@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="author" content="Sara Alashqar">
+  <title>Project 2</title>
+ 
+</head>
+
+<body>
+  <p><a href="..\home.html">Home</a></p>
+   <a href="..\home.html"><img src="..\sftwear.png" alt=""></a>  
+   
+<br>
+   <script>
+     var myMessages = [ 
+       "This Tshirt says i'm Fabolous",
+       "I’m Kind Of A Big Deal",
+       "I’m Kind Of A Big Deal",
+       "I’m Not Angry This is Just My Face",
+       "Stop Reading My Shirt",
+       "May The 4th Be With You",
+       "Sorry i'm late. I didn't want to come.",
+       "My favorite plans are cancelled plans",
+       "Socially distant",
+       "Not shy. I just don't like you."
+
+
+     ]
+
+     var luckyNumber = Number(prompt("Please give me your lucky number"))
+     var index = luckyNumber % myMessages.length;
+    
+    document.write(myMessages[index]);
+   
+    
+  </script>
+
+    
+  
+</body>
+</html>

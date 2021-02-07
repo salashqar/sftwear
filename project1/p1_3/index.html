@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Project 1</title>
+ 
+</head>
+
+<body>
+  <p><a href="..\home.html">Home</a></p>
+   <a href="..\home.html"><img src="..\images\sftwear.png" alt=""></a>  
+   <h1>Display Name T-shirt maker page</h1>
+   <p> Please Provide your three favorite numbers for the average t-shirt</p>
+
+   <script>
+
+    var aNumber = prompt ("Please enter a number") //Create variable and store prompt for first number to that variable
+
+      var firstNumber = Number (aNumber) //convert into a number 
+      var secondNumber = prompt ("Please enter a second number") 
+      var secondNumber = Number(secondNumber); 
+      var thirdNumber = prompt ("Please enter a third number") 
+      var thirdNumber = Number(thirdNumber); 
+      var threeNumbers = firstNumber + "," + " " + secondNumber + "," + " " + thirdNumber;
+      var output =  threeNumbers
+
+      document.write("The average of" + " " + output + " " + "is" + " ");
+      document.write ((firstNumber+secondNumber+thirdNumber)/3);
+
+  </script>
+    
+    <hr>
+</body>
+</html>

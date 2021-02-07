@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Project 1</title>
+ 
+</head>
+
+<body>
+  <p><a href="..\home.html">Home</a></p>
+   <a href="..\home.html"><img src="..\images\sftwear.png" alt=""></a>  
+   <h1>This web page will create the your age shirt</h1>
+
+   <script>
+    var bDay = prompt("Please enter your birthday", "mm/dd/yyyy");
+    var aDateAsDate = new Date(bDay); //converted from string to date 
+    var currentDate = new Date(); //got today's date
+    var aMessage = ("I am")
+    
+    //calculations
+    document.write(aMessage);
+    document.write(" ")
+    document.write(currentDate.getFullYear() - aDateAsDate.getFullYear())
+   
+    
+  </script>
+    
+    <hr>
+</body>
+</html>
